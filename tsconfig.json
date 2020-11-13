@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "sourceMap": true,
+    "target": "es5",
+    "module": "umd",
+    "noImplicitAny": false,
+    "sourceMap": false,
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]
-    }
+    },
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"
-  ]
+  ],
 }
